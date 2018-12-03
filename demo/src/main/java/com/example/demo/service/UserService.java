@@ -4,6 +4,7 @@ import com.example.demo.anno.RouteDataSource;
 import com.example.demo.constant.DataSources;
 import com.example.demo.db.entity.UserTest;
 import com.example.demo.db.repository.UserRepository;
+import com.example.demo.result.Result;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -24,4 +25,5 @@ public class UserService {
     public List<UserTest> getAllUser(){
         return userRepository.findAll();
     }
+
 }
